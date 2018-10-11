@@ -1,5 +1,6 @@
 <?php
-
+use App\Models\Asistente;
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,4 +14,11 @@
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
+});
+
+// Rutas para servios de asistentes
+$router->group(['prefix' => 'api/asistente'], function() use($router){
+
+	$router->get('asistentes', ['uses' => 'AsistenteController@Asistentes']);
+    
 });
