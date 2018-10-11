@@ -20,5 +20,6 @@ $router->get('/', function () use ($router) {
 $router->group(['prefix' => 'api/asistente'], function() use($router){
 
 	$router->get('asistentes', ['uses' => 'AsistenteController@Asistentes']);
+	$router->get('asistentes-colegio/{colegio_id}', ['uses' => 'AsistenteController@AsistentesColegio']);
     
 });
