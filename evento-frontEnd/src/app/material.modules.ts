@@ -31,7 +31,6 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -67,8 +66,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-	MatPaginatorModule,
-    MatFormFieldModule],
+	MatPaginatorModule],
 
   exports: [BrowserModule,
     BrowserAnimationsModule,
@@ -102,7 +100,6 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-	MatPaginatorModule,
-    MatFormFieldModule],
+	MatPaginatorModule],
 })
 export class MaterialModule { }
