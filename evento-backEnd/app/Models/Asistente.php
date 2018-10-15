@@ -10,3 +10,5 @@ class Asistente extends Model
     protected $primaryKey = 'evento_asistente_id';
     public $timestamps = false;
 }
+
+// Prueba 
