@@ -21,3 +21,5 @@ class AsistenteController extends Controller
 									   ->get());
 	}
 }
+
+// Verificando
